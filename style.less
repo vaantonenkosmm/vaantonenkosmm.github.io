@@ -1,0 +1,726 @@
+//fonts
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/10177.eot');
+	src: local('☺'), url('fonts/10177.woff') format('woff'), url('fonts/10177.ttf') format('truetype'), url('fonts/10177.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/Gilroy-ExtraBold.eot');
+	src: local('☺'), url('fonts/Gilroy-ExtraBold.woff') format('woff'), url('fonts/Gilroy-ExtraBold.ttf') format('truetype'), url('fonts/Gilroy-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Rubik';
+	src: url('fonts/Rubik-Regular.eot');
+	src: local('☺'), url('fonts/Rubik-Regular.woff') format('woff'), url('fonts/Rubik-Regular.ttf') format('truetype'), url('fonts/Rubik-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    &-content{
+        &-text{
+            margin-left: 1.9rem;
+            margin-top: 6rem;
+            h1{
+                font-family: Gilroy;
+                font-style: italic;
+                font-weight: 800;
+                font-size: 3rem;
+                line-height: 5rem;
+                color: #F4F4F4;
+            }
+            &-info{
+                display: flex;
+                p{
+                    margin-top: 0.8rem;
+                    margin-left: 0.2rem;
+                    color: #CECECE;
+                    font-family: Rubik;
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                }
+                span{
+                    margin-top: 1.6rem;
+                    background-color:#9E2324;
+                    width: 1.6rem;
+                    height: 0.1rem;
+                }
+            }
+        }
+        button{
+            margin-top: 1rem;
+            border: none;
+            border-radius: 10rem;
+            width: 16rem;
+            height: 4rem;
+            color: #ffffff;
+            font-family: Gilroy;
+            font-size: 1.3rem;
+            background: linear-gradient(180deg, #F25B5C 0%, #B52627 100%);
+            &:focus {
+                outline: none;
+              }
+        }
+        img{
+            margin-top: 1rem;
+            margin-right: 2rem;
+            height: 35rem;
+        }
+    }
+}
+
+.services{
+    &-header{
+        margin-top: 7rem;
+        h2{
+            font-family: Gilroy;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            color: #F4F4F4;
+            font-size: 2.3rem;
+        }
+        p{
+            font-family: Gilroy;
+            font-weight: 400;
+            color: #F4F4F4;
+        }
+    }
+    &-content{
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        padding-left: 6rem;
+        border-radius: 2.5rem;
+        background-color: #303030;
+        span{
+            color:#B52627;
+            text-shadow: 0px 1px 4px #F25B5C;
+        }
+        p{
+            margin-left: 1rem;
+            font-family: Gilroy;
+            color: #F4F4F4;
+            margin-bottom: 2rem;
+        }
+        &-info{
+            display: flex;
+            &:last-child{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+.clients{
+    img{
+        transition: 1s;
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+    h2{
+        color: #f4f4f4;
+        font-family: Gilroy;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 10rem;
+    }
+    hr{
+        background-color: #4A4A4A;
+        width: 80%;
+    }
+    .client-content{
+        .text-center{
+            h3{
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+                font-family: Gilroy;
+                font-weight: 600;
+                font-style: italic;
+                color: #F25B5C;
+            }
+            p{
+                font-family: Gilroy;
+                font-weight: 700;
+                color: #DFDEDE;
+                font-size: 1.2rem;
+            }
+        }
+        .tags-1{
+            display: flex;
+            margin-left: 5rem;
+            margin-top: 2rem;
+            p{
+                border: 1px solid #B52627;
+                border-radius: 10rem;
+                padding: 0.5rem 1rem;
+                margin-left: 1rem;
+                color: #dfdede;
+            }
+        } 
+        .tags-2{
+            display: flex;
+            margin-left: 4rem;
+            p{
+                border: 1px solid #B52627;
+                border-radius: 10rem;
+                padding: 0.5rem 1rem;
+                margin-left: 1.8rem;
+                color: #dfdede;
+            }
+        }
+        &-info{
+            margin-top: 3rem;
+            h3{
+                margin-bottom: 1rem;
+                color: #ffffff;
+            }
+            p{
+                font-family: Gilroy;
+                font-weight: 550;
+                color: #dfdede;
+                font-size: 0.9rem;
+            }
+        }   
+        &-task{
+            display: flex;
+            span{
+                color:#B52627;
+                text-shadow: 0px 1px 4px #F25B5C;
+            }
+            p{
+                font-weight: 550;
+                margin-left: 1rem;
+                font-family: Gilroy;
+                color: #F4F4F4;
+                margin-bottom: 2rem;
+                a{
+                    color: #ffffff;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.compare{
+    margin-right: 0;
+    display: flex;
+    p{
+        margin-top: -2rem;
+        color: #d8d8d8;
+    }
+    .after{
+        img{
+            margin-left: 0rem;
+        }
+    }
+}
+.result{
+    margin-left: 2rem;
+    p{
+        margin-top: -2rem;
+        color: #d8d8d8;
+    }
+}
+.client{
+    margin-left: 2.8rem;
+}
+.statistic{
+    &-photo {
+        display: flex;
+    }
+    p{
+        margin-left: 6.5rem;
+        margin-top: -2rem;
+        color:#d8d8d8;
+    }
+}
+video{
+    margin-top: 2.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: 280px;
+}
+.review{
+    video{
+        margin-left: 4rem;
+    }
+    p{
+        margin-left: 2rem;
+        color: #F25B5C;
+    }
+}
+
+.etiquette{
+    .client{
+        p{
+            margin-left: 4.3rem;
+            margin-top: -2rem;
+        }
+    }
+    .tags-1{
+        padding-left: 2rem;
+    }
+    video{
+        margin-left: 2.7rem;
+    }
+    img{
+        border-radius: 0.5rem;
+    }
+    &-content{
+        display: flex;
+    }
+    .names{
+        display: flex;
+        color:#d8d8d8;
+        p{
+            margin-top: -1rem;
+            margin-left: 10rem;
+            &:last-child{
+                margin-left: 18rem;
+                color: #F25B5C;
+            }
+        }
+    }
+}
+.mt-10{
+    margin-top: 4rem;
+}
+
+.obmen{
+    .client{
+        p{
+            margin-top: -2rem;
+            margin-left: 4.7rem;
+        }
+    }
+    .result{
+        display: flex;        
+    }
+    .inst{
+        margin-top: -1rem;
+        margin-left: 9rem;
+        color:#F25B5C; 
+    }
+    
+}
+.photos{
+    height: 14rem;
+}
+.photo{
+    height: 18rem;
+} 
+.property{
+    .tags-1{
+        padding-left: 2.5rem;
+    }
+    .tags-2{
+        padding-left: 2rem;
+    }
+    img{
+        height: 15em;
+    }
+    video{
+        margin-left: 3rem;
+        height: 11rem;
+        width: 11rem;
+    }
+    .seven{
+        margin-top: -11rem;
+    }
+}
+
+.psycho{
+    .tags-1{
+        padding-left: 3rem;
+    }
+    &-content{
+        display: flex;
+        .review{
+            p{
+                padding-left: 2.5rem;
+            }
+        }
+    }
+    button{
+        margin-left: 30rem;
+        padding: 1.5rem 3rem;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #B52627;
+        border-radius: 10rem;
+        cursor: pointer;
+        transition: ease-in .25s all;
+        &:hover{
+            background-color: #B52627;
+        }
+    }
+    video{
+        height: 30rem;
+    }
+}
+
+.carousel-inner{
+    height: 47rem;
+    margin: auto;
+    width: 20%;
+}
+.carousel-indicators{
+    li{
+        background-color:#C4C4C4;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+    }
+    .active{
+        background-color: #EC5858;
+    }
+}
+
+.carousel-control-prev{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
+    background-color: #EC5858;
+    margin-left: 20rem;
+    margin-top: 20rem;
+    background-image: url("img/left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-next{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
+    background-color: #EC5858;
+    margin-right: 20rem;
+    margin-top: 20rem;
+    background-image: url("img/right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews{
+    margin-top: 4rem;
+    margin-bottom: -6rem;
+    h2{
+        color: #F4F4F4;
+        font-family: Gilroy;
+        font-style: italic;
+        font-weight: 800;
+    }
+}
+
+.connect{
+    margin-top: 20rem;
+    h2{
+        color: #F4F4F4;
+        font-family: Gilroy;
+        font-style: italic;
+        font-weight: 800;
+    }
+    p{
+        margin-top: 2rem;
+        color: #F4F4F4;
+        font-family: Gilroy;
+        font-weight: 600;
+    }
+    button{
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+        margin-right: 1.5rem;
+        border: 2px solid #B52627;
+        border-radius: 10rem;
+        background-color: transparent;
+        color: #F4F4F4;
+        padding: 1rem 3rem;
+        img{
+            width: 20%;
+        }
+        transition: ease-in .25s all;
+        &:hover{
+            background-color: #B52627;
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+}
+.phone-button{
+    visibility: hidden;
+}
+
+
+@media (max-width: 500px)
+{
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        background: url(img/mobile-back.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .client{
+        img{
+            height: 8rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            margin-top: 7rem;
+            margin-left: 0.5rem;
+        }
+    }
+    .main{
+        &-content{
+            &-text{
+                margin-top: 5rem;   
+                h1{
+                    font-size: 1.7rem;
+                    text-align: center;
+                    line-height: 2;
+                }
+                span{
+                    visibility: hidden;
+                }
+                p{
+                    text-align: center;
+                    font-size: 0.9rem;
+                }
+                button{
+                    visibility: hidden;
+                }
+            }
+            img{
+                margin-top: -3rem;
+                margin-left: 0.5rem;
+                height: 25rem;
+            }
+            .phone-button{
+                visibility: visible;
+                margin-top: -3rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+    .services{
+        &-header-text{
+            visibility: hidden;
+        }
+        &-content{
+            margin-bottom: 2rem;
+            padding-top: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 2.5rem;
+            background-color: #303030;
+            span{
+                color:#B52627;
+                text-shadow: 0px 1px 4px #F25B5C;
+            }
+            p{
+                font-size: 0.9rem;
+                margin-left: 1rem;
+                font-family: Gilroy;
+                color: #F4F4F4;
+                margin-bottom: 2rem;
+            }
+            &-info{
+                display: flex;
+                &:last-child{
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        &-image{
+            img{
+                text-align: center;
+                height: 14rem;
+            }
+        }
+    }
+    .clients{
+        h2{
+            font-size: 1.7rem;
+        }
+        .client-content{
+            .tags-1{
+                margin-left: 0.5rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            .tags-2{
+                margin-left: -1rem;
+            }
+        }
+        .client{
+            margin-left: 1.7rem;
+        }
+        .gymnastic{
+            img{
+                height: 15rem;
+            }
+            &-info{
+                display: flex;
+                video{
+                    margin-left: 2rem;
+                    height: 12rem;
+                }
+            }
+        }
+        .etiquette{
+            img{
+                height: 8rem;
+            }
+            .tags-2{
+                margin-left: 3rem;
+            }
+            .client p{
+                margin-left: 0;
+            }
+            video{
+                height: 13rem;
+            }
+            .names{
+                margin-top: 2rem;
+                margin-left: -2rem;
+            }
+            .phone-review{
+                img{
+                    height: 19rem;
+                }
+                p{  
+                    margin-top: -1rem;
+                    margin-left: 9rem;
+                    color:#F25B5C; 
+                }
+            }
+        }
+        .obmen{
+            .tags-1{
+                margin-left: 0.7rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            .tags-2{
+                margin-left: 1.7rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            .client p{
+                margin-left: 0.5rem;
+            }
+            .photo{
+                margin-left: 0rem;
+                height: 17rem;
+            }
+        }
+        .property{
+            .tags-1{
+                margin-left: 0rem;
+            }
+            .tags-2{
+                margin-left: 0.5rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            img{
+                height: 7rem;
+            }
+            .seven {
+                margin-top: -5rem;
+            }
+            video{
+                margin-left: 1.4rem;
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+        .psycho{
+            .tags-1{
+                padding-left: 1rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            .tags-2{
+                padding-left: 0rem;
+                p{
+                    margin-left: 0.5rem;
+                }
+            }
+            &-content{
+                display: block;
+            }
+            button{
+                margin-top: 2rem;
+                margin-left: 5.5rem;
+            }
+            .review{
+                p{
+                    margin-top: 1rem;
+                    margin-left: 5rem;
+                }
+            }
+        }
+    }
+    .reviews{
+        .carousel-inner{
+            height: 26rem;
+            width: 10rem;
+            img{
+                height: 21rem;
+            }
+        }
+        .carousel-control-prev{
+            margin-left: 3rem;
+            margin-top: 9rem;
+            background-image: url("img/left.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .carousel-control-next{
+            margin-right: 3rem;
+            margin-top: 9rem;
+        }
+    }
+    .connect{
+        margin-top: 10rem;
+        height: 70vh;
+        h2{
+            font-size: 1.4rem;
+        }
+    }
+    .connect button {
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+}

@@ -1,0 +1,644 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/10177.eot');
+  src: local('☺'), url('fonts/10177.woff') format('woff'), url('fonts/10177.ttf') format('truetype'), url('fonts/10177.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-ExtraBold.eot');
+  src: local('☺'), url('fonts/Gilroy-ExtraBold.woff') format('woff'), url('fonts/Gilroy-ExtraBold.ttf') format('truetype'), url('fonts/Gilroy-ExtraBold.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Regular.eot');
+  src: local('☺'), url('fonts/Rubik-Regular.woff') format('woff'), url('fonts/Rubik-Regular.ttf') format('truetype'), url('fonts/Rubik-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-image: url(img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button:focus{
+  outline: none;
+}
+.main-content-text {
+  margin-left: 1.9rem;
+  margin-top: 6rem;
+}
+.main-content-text h1 {
+  font-family: Gilroy;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #F4F4F4;
+}
+.main-content-text-info {
+  display: flex;
+}
+.main-content-text-info p {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  color: #CECECE;
+  font-family: Rubik;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.main-content-text-info span {
+  margin-top: 1.6rem;
+  background-color: #9E2324;
+  width: 1.6rem;
+  height: 0.1rem;
+}
+.main-content button {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10rem;
+  width: 16rem;
+  height: 4rem;
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 1.3rem;
+  background: linear-gradient(180deg, #F25B5C 0%, #B52627 100%);
+}
+.main-content button:focus {
+  outline: none;
+}
+.main-content img {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  height: 35rem;
+}
+.services-header {
+  margin-top: 7rem;
+}
+.services-header h2 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #F4F4F4;
+  font-size: 2.3rem;
+}
+.services-header p {
+  font-family: Gilroy;
+  font-weight: 400;
+  color: #F4F4F4;
+}
+.services-content {
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  border-radius: 2.5rem;
+  background-color: #303030;
+}
+.services-content span {
+  color: #B52627;
+  text-shadow: 0px 1px 4px #F25B5C;
+}
+.services-content p {
+  margin-left: 1rem;
+  font-family: Gilroy;
+  color: #F4F4F4;
+  margin-bottom: 2rem;
+}
+.services-content-info {
+  display: flex;
+}
+.services-content-info:last-child {
+  margin-bottom: 3rem;
+}
+.clients img {
+  transition: 1s;
+}
+.clients img:hover {
+  transform: scale(1.4);
+}
+.clients h2 {
+  color: #f4f4f4;
+  font-family: Gilroy;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 10rem;
+}
+.clients hr {
+  background-color: #4A4A4A;
+  width: 80%;
+}
+.clients .client-content .text-center h3 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-style: italic;
+  color: #F25B5C;
+}
+.clients .client-content .text-center p {
+  font-family: Gilroy;
+  font-weight: 700;
+  color: #DFDEDE;
+  font-size: 1.2rem;
+}
+.clients .client-content .tags-1 {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.clients .client-content .tags-1 p {
+  border: 1px solid #B52627;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  color: #dfdede;
+}
+.clients .client-content .tags-2 {
+  display: flex;
+  margin-left: 4rem;
+}
+.clients .client-content .tags-2 p {
+  border: 1px solid #B52627;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1.8rem;
+  color: #dfdede;
+}
+.clients .client-content-info {
+  margin-top: 3rem;
+}
+.clients .client-content-info h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.clients .client-content-info p {
+  font-family: Gilroy;
+  font-weight: 550;
+  color: #dfdede;
+  font-size: 0.9rem;
+}
+.clients .client-content-task {
+  display: flex;
+}
+.clients .client-content-task span {
+  color: #B52627;
+  text-shadow: 0px 1px 4px #F25B5C;
+}
+.clients .client-content-task p {
+  font-weight: 550;
+  margin-left: 1rem;
+  font-family: Gilroy;
+  color: #F4F4F4;
+  margin-bottom: 2rem;
+}
+.clients .client-content-task p a {
+  color: #ffffff;
+}
+.clients .client-content-task p a:hover {
+  text-decoration: none;
+}
+.compare {
+  margin-right: 0;
+  display: flex;
+}
+.compare p {
+  margin-top: -2rem;
+  color: #d8d8d8;
+}
+.compare .after img {
+  margin-left: 0rem;
+}
+.result {
+  margin-left: 2rem;
+}
+.result p {
+  margin-top: -2rem;
+  color: #d8d8d8;
+}
+.client {
+  margin-left: 2.8rem;
+}
+.statistic-photo {
+  display: flex;
+}
+.statistic p {
+  margin-left: 6.5rem;
+  margin-top: -2rem;
+  color: #d8d8d8;
+}
+video {
+  margin-top: 2.4rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  height: 280px;
+}
+.review video {
+  margin-left: 4rem;
+}
+.review p {
+  margin-left: 2rem;
+  color: #F25B5C;
+}
+.etiquette .client p {
+  margin-left: 4.3rem;
+  margin-top: -2rem;
+}
+.etiquette .tags-1 {
+  padding-left: 2rem;
+}
+.etiquette video {
+  margin-left: 2.7rem;
+}
+.etiquette img {
+  border-radius: 0.5rem;
+}
+.etiquette-content {
+  display: flex;
+}
+.etiquette .names {
+  display: flex;
+  color: #d8d8d8;
+}
+.etiquette .names p {
+  margin-top: -1rem;
+  margin-left: 10rem;
+}
+.etiquette .names p:last-child {
+  margin-left: 18rem;
+  color: #F25B5C;
+}
+.mt-10 {
+  margin-top: 4rem;
+}
+.obmen .client p {
+  margin-top: -2rem;
+  margin-left: 4.7rem;
+}
+.obmen .result {
+  display: flex;
+}
+.obmen .inst {
+  margin-top: -1rem;
+  margin-left: 9rem;
+  color: #F25B5C;
+}
+.photos {
+  height: 14rem;
+}
+.photo {
+  height: 18rem;
+}
+.property .tags-1 {
+  padding-left: 2.5rem;
+}
+.property .tags-2 {
+  padding-left: 2rem;
+}
+.property img {
+  height: 15em;
+}
+.property video {
+  margin-left: 3rem;
+  height: 11rem;
+  width: 11rem;
+}
+.property .seven {
+  margin-top: -11rem;
+}
+.psycho .tags-1 {
+  padding-left: 3rem;
+}
+.psycho-content {
+  display: flex;
+}
+.psycho-content .review p {
+  padding-left: 2.5rem;
+}
+.psycho button {
+  margin-left: 30rem;
+  padding: 1.5rem 3rem;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #B52627;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: ease-in 0.25s all;
+}
+.psycho button:hover {
+  background-color: #B52627;
+}
+.psycho video {
+  height: 30rem;
+}
+.carousel-inner {
+  height: 47rem;
+  margin: auto;
+  width: 20%;
+}
+.carousel-indicators li {
+  background-color: #C4C4C4;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #EC5858;
+}
+.carousel-control-prev {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10rem;
+  background-color: #EC5858;
+  margin-left: 20rem;
+  margin-top: 20rem;
+  background-image: url("img/left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-control-next {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10rem;
+  background-color: #EC5858;
+  margin-right: 20rem;
+  margin-top: 20rem;
+  background-image: url("img/right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reviews {
+  margin-top: 4rem;
+  margin-bottom: -6rem;
+}
+.reviews h2 {
+  color: #F4F4F4;
+  font-family: Gilroy;
+  font-style: italic;
+  font-weight: 800;
+}
+.connect {
+  margin-top: 20rem;
+}
+.connect h2 {
+  color: #F4F4F4;
+  font-family: Gilroy;
+  font-style: italic;
+  font-weight: 800;
+}
+.connect p {
+  margin-top: 2rem;
+  color: #F4F4F4;
+  font-family: Gilroy;
+  font-weight: 600;
+}
+.connect button {
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+  margin-right: 1.5rem;
+  border: 2px solid #B52627;
+  border-radius: 10rem;
+  background-color: transparent;
+  color: #F4F4F4;
+  padding: 1rem 3rem;
+  transition: ease-in 0.25s all;
+}
+.connect button img {
+  width: 20%;
+}
+.connect button:hover {
+  background-color: #B52627;
+}
+.connect a:hover {
+  text-decoration: none;
+}
+.phone-button {
+  visibility: hidden;
+}
+@media (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    background: url(img/mobile-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .client img {
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+  .client p {
+    margin-top: 7rem;
+    margin-left: 0.5rem;
+  }
+  .main-content-text {
+    margin-top: 5rem;
+  }
+  .main-content-text h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 2;
+  }
+  .main-content-text span {
+    visibility: hidden;
+  }
+  .main-content-text p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .main-content-text button {
+    visibility: hidden;
+  }
+  .main-content img {
+    margin-top: -3rem;
+    margin-left: 0.5rem;
+    height: 25rem;
+  }
+  .main-content .phone-button {
+    visibility: visible;
+    margin-top: -3rem;
+    margin-left: 3rem;
+  }
+  .services-header-text {
+    visibility: hidden;
+  }
+  .services-content {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2.5rem;
+    background-color: #303030;
+  }
+  .services-content span {
+    color: #B52627;
+    text-shadow: 0px 1px 4px #F25B5C;
+  }
+  .services-content p {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    font-family: Gilroy;
+    color: #F4F4F4;
+    margin-bottom: 2rem;
+  }
+  .services-content-info {
+    display: flex;
+  }
+  .services-content-info:last-child {
+    margin-bottom: 3rem;
+  }
+  .services-image img {
+    text-align: center;
+    height: 14rem;
+  }
+  .clients h2 {
+    font-size: 1.7rem;
+  }
+  .clients .client-content .tags-1 {
+    margin-left: 0.5rem;
+  }
+  .clients .client-content .tags-1 p {
+    margin-left: 0.5rem;
+  }
+  .clients .client-content .tags-2 {
+    margin-left: -1rem;
+  }
+  .clients .client {
+    margin-left: 1.7rem;
+  }
+  .clients .gymnastic img {
+    height: 15rem;
+  }
+  .clients .gymnastic-info {
+    display: flex;
+  }
+  .clients .gymnastic-info video {
+    margin-left: 2rem;
+    height: 12rem;
+  }
+  .clients .etiquette img {
+    height: 8rem;
+  }
+  .clients .etiquette .tags-2 {
+    margin-left: 3rem;
+  }
+  .clients .etiquette .client p {
+    margin-left: 0;
+  }
+  .clients .etiquette video {
+    height: 13rem;
+  }
+  .clients .etiquette .names {
+    margin-top: 2rem;
+    margin-left: -2rem;
+  }
+  .clients .etiquette .phone-review img {
+    height: 19rem;
+  }
+  .clients .etiquette .phone-review p {
+    margin-top: -1rem;
+    margin-left: 9rem;
+    color: #F25B5C;
+  }
+  .clients .obmen .tags-1 {
+    margin-left: 0.7rem;
+  }
+  .clients .obmen .tags-1 p {
+    margin-left: 0.5rem;
+  }
+  .clients .obmen .tags-2 {
+    margin-left: 1.7rem;
+  }
+  .clients .obmen .tags-2 p {
+    margin-left: 0.5rem;
+  }
+  .clients .obmen .client p {
+    margin-left: 0.5rem;
+  }
+  .clients .obmen .photo {
+    margin-left: 0rem;
+    height: 17rem;
+  }
+  .clients .property .tags-1 {
+    margin-left: 0rem;
+  }
+  .clients .property .tags-2 {
+    margin-left: 0.5rem;
+  }
+  .clients .property .tags-2 p {
+    margin-left: 0.5rem;
+  }
+  .clients .property img {
+    height: 7rem;
+  }
+  .clients .property .seven {
+    margin-top: -5rem;
+  }
+  .clients .property video {
+    margin-left: 1.4rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .clients .psycho .tags-1 {
+    padding-left: 1rem;
+  }
+  .clients .psycho .tags-1 p {
+    margin-left: 0.5rem;
+  }
+  .clients .psycho .tags-2 {
+    padding-left: 0rem;
+  }
+  .clients .psycho .tags-2 p {
+    margin-left: 0.5rem;
+  }
+  .clients .psycho-content {
+    display: block;
+  }
+  .clients .psycho button {
+    margin-top: 2rem;
+    margin-left: 5.5rem;
+  }
+  .clients .psycho .review p {
+    margin-top: 1rem;
+    margin-left: 5rem;
+  }
+  .reviews .carousel-inner {
+    height: 26rem;
+    width: 10rem;
+  }
+  .reviews .carousel-inner img {
+    height: 21rem;
+  }
+  .reviews .carousel-control-prev {
+    margin-left: 3rem;
+    margin-top: 9rem;
+    background-image: url("img/left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .reviews .carousel-control-next {
+    margin-right: 3rem;
+    margin-top: 9rem;
+  }
+  .connect {
+    margin-top: 10rem;
+    height: 70vh;
+  }
+  .connect h2 {
+    font-size: 1.4rem;
+  }
+  .connect button {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}
